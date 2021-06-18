@@ -25,13 +25,13 @@ public class Baslangic {
             float yeniPara = para * 0.18f;
             float kdvli = para + yeniPara;
             System.out.println("KDV'siz fiyat " + para);
-            System.out.println("KDV'li fiyat " + yeniPara);
+            System.out.println("KDV'li fiyat " + kdvli);
         }
         if(para > 1000){
             float yeniPara = para * 0.8f;
             float kdvli = para + yeniPara;
             System.out.println("KDV'siz fiyat " + para);
-            System.out.println("KDV'li fiyat " + yeniPara);
+            System.out.println("KDV'li fiyat " + kdvli);
         }
 
 
