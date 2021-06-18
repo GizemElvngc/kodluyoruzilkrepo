@@ -1,0 +1,43 @@
+/*
+Üç kenar uzunluğunu kullanıcıdan aldığınız üçgenin alanını hesaplayan programı yazınız.
+
+Formül
+Üç𝑔𝑒𝑛𝑖𝑛 ç𝑒𝑣𝑟𝑒𝑠𝑖 = 2𝑢
+
+𝑢 = (a+b+c) / 2
+
+Alan * Alan = 𝑢 * (𝑢 − 𝑎)* (𝑢 − 𝑏) * (𝑢 − 𝑐)
+*/
+package Giris;
+
+import java.util.Scanner;
+
+import static java.lang.StrictMath.sqrt;
+
+public class Baslangic {
+    public static void main(String[] args) {
+
+        Scanner inp = new Scanner(System.in);
+
+        double u , ucgenCevre , ucgenAlan ;
+
+        System.out.println("a kenarinin degerini giriniz ");
+        int a = inp.nextInt();
+
+        System.out.println("b kenarinin degerini giriniz");
+        int b = inp.nextInt();
+
+        System.out.println("c kenarinin degerini giriniz ");
+        int c = inp.nextInt();
+
+         int toplam = 0;
+         toplam = a+b+c;
+         u = toplam/2;
+         ucgenCevre = u*2;
+         ucgenAlan = 1;
+         ucgenAlan = sqrt(u*(u-a)*(u-b)*(u-c));
+        System.out.println("Uçgenin cevresi" + ucgenCevre);
+        System.out.println("Ucgenin alani" + ucgenAlan);
+
+    }
+}
