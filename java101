@@ -35,8 +35,8 @@ public class Baslangic {
         double ortalama = toplam / 6;
         System.out.println(ortalama);
 
-        String name = ortalama > 60 ? "Gecti" : "Kaldi";
-        System.out.println(name);
+        String state = ortalama > 60 ? "Gecti" : "Kaldi";
+        System.out.println(state);
 
     }
 }
