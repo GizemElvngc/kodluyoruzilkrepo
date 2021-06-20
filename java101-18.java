@@ -6,6 +6,7 @@ Java ile kombinasyon hesaplayan program yazınız.
 Kombinasyon formülü
 C(n,r) = n! / (r! * (n-r)!)
 */
+
 package Giris;
 
 
@@ -22,14 +23,14 @@ public class Baslangic {
         System.out.println("Seçim Sayisini Giriniz :");
         r = inp.nextInt();
 
-        int total = 1, total2 = 1, total3 = 1;
+        int total1 = 1, total2 = 1, total3 = 1;
 
         for(int i=1 ; i<= n; i++){
-            total*=i;
+            total1 *= i;
         }
 
         for(int i=1 ; i<= r; i++){
-            total2*=i;
+            total2 *= i;
         }
 
         for(int i=1; i<=(n-r); i++){
@@ -37,7 +38,7 @@ public class Baslangic {
         }
 
 
-        kombinasyon = (double)(total / (total2 * total3));
+        kombinasyon = (double)(total1/(total2 * total3));
         System.out.println("Kombinasyon değeri :" + kombinasyon);
 
 
